@@ -1,4 +1,4 @@
-module github.com/okx/poseidon-gold
+module github.com/okx/poseidongold
 
 go 1.22.2
 
