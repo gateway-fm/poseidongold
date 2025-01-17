@@ -1,0 +1,1 @@
+void hash12(unsigned long long *input, unsigned long long *capacity, unsigned long long *result);

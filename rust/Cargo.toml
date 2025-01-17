@@ -1,0 +1,11 @@
+[package]
+name = "rustposeidongold"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+plonky2 = {git="https://github.com/okx/plonky2.git", rev="c18e54cd8fe6c9f55846239d1043800c177fa97e"}
+plonky2_field = {git="https://github.com/okx/plonky2.git", rev="c18e54cd8fe6c9f55846239d1043800c177fa97e"}
