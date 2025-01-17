@@ -1,4 +1,4 @@
-package rustposeidongold
+package poseidongold
 
 import (
 	"math/rand"

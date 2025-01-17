@@ -1,6 +1,6 @@
 //go:build amd64
 
-package rustposeidongold
+package poseidongold
 
 /*
 #cgo CFLAGS: -I.
