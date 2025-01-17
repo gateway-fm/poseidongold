@@ -24,7 +24,7 @@ func TestHashWithResult(t *testing.T) {
 
 	for i := 0; i < SIZE; i++ {
 		iden3HashResult, _ := goldenposeidon.Hash(input[i], capacity)
-		HashWithResultRust(&input[i], &capacity, &result)
+		HashWithResult(&input[i], &capacity, &result)
 
 		passedTest = true
 		for j := 0; j < 4; j++ {

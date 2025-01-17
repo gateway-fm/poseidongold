@@ -13,7 +13,7 @@ import (
 	"unsafe"
 )
 
-func HashWithResultRust(in *[8]uint64, capacity *[4]uint64, result *[4]uint64) {
+func HashWithResult(in *[8]uint64, capacity *[4]uint64, result *[4]uint64) {
 	cInput := (*C.ulonglong)(unsafe.Pointer(&in[0]))
 	cCapacity := (*C.ulonglong)(unsafe.Pointer(&capacity[0]))
 	cResult := (*C.ulonglong)(unsafe.Pointer(&result[0]))
