@@ -56,7 +56,8 @@ func prepareInputs() ([8]uint64, [4]uint64) {
 	return input, capacity
 }
 
-func BenchmarkHashWithResult(b *testing.B) {
+// This benchmarks our wrapper over Plonky2 Rust implementation
+func BenchmarkRustWrapper(b *testing.B) {
 	inputs, capacity := prepareInputs()
 	var result [4]uint64
 
@@ -65,7 +66,8 @@ func BenchmarkHashWithResult(b *testing.B) {
 	}
 }
 
-func BenchmarkVectorizedPoseidongold(b *testing.B) {
+// This benchmarks the implementation from: github.com/gateway-fm/vectorized-poseidon-gold
+func BenchmarkVectorizedPoseidonGold(b *testing.B) {
 	inputs, capacity := prepareInputs()
 	var result [4]uint64
 
