@@ -1,6 +1,6 @@
 module github.com/okx/poseidongold
 
-go 1.22.2
+go 1.21
 
 require github.com/iden3/go-iden3-crypto v0.0.17
 
