@@ -47,23 +47,15 @@ BenchmarkVectorizedPoseidonGold-12        365305              3165 ns/op
 PASS
 ```
 
-## Build for Alpine Linux
+## Build for Alpine Linux using Docker
 
 This is needed to build [xlayer-erigon](https://github.com/okx/xlayer-erigon).
 
 ```
-$ docker run -v .:/poseidon -it docker.io/library/golang:1.22-alpine3.20 sh
-# *** in the container:
-# apk add curl
-# apk add build-base
-# cd /poseidon/rust
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# . "$HOME/.cargo/env"
-# rustup override set nightly
-# cargo build --release
-# cp target/release/librustposeidongold.a ../go/
-# cd ../go
-# go test
+$ docker build -t poseidongold-builder .
+$ docker run -it --volume `pwd`:/pg poseidongold-builder bash
+# in Docker:
+# cp target/release/librustposeidongold.a /pg/go/librustposeidongold-linux-amd64.a
 ```
 
 ## License
