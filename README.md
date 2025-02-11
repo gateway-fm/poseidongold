@@ -23,7 +23,7 @@ $ cd go
 $ go test -bench .
 ```
 
-Example output on a system with AMD Ryzen 9 7950X CPU:
+Example output on a system with AMD Ryzen 9 7950X CPU (amd64):
 ```
 goos: linux
 goarch: amd64
@@ -31,6 +31,17 @@ pkg: github.com/okx/poseidongold/go
 cpu: AMD Ryzen 9 7950X 16-Core Processor
 BenchmarkRustWrapper-32                  1359136               865.9 ns/op
 BenchmarkVectorizedPoseidonGold-32        775248              1517 ns/op
+PASS
+```
+
+Example output on a macOS with Apple M2 Max CPU (arm64):
+```
+goos: darwin
+goarch: arm64
+pkg: github.com/okx/poseidongold/go
+cpu: Apple M2 Max
+BenchmarkRustWrapper-12                  1309304               935.4 ns/op
+BenchmarkVectorizedPoseidonGold-12        365305              3165 ns/op
 PASS
 ```
 

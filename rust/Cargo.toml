@@ -7,5 +7,5 @@ edition = "2021"
 crate-type = ["staticlib"]
 
 [dependencies]
-plonky2 = {git="https://github.com/okx/plonky2.git", rev="c18e54cd8fe6c9f55846239d1043800c177fa97e"}
-plonky2_field = {git="https://github.com/okx/plonky2.git", rev="c18e54cd8fe6c9f55846239d1043800c177fa97e"}
+plonky2 = {git="https://github.com/okx/plonky2.git", rev="0f8647c0145b4f2711baae5ad40dc931c41f919c"}
+plonky2_field = {git="https://github.com/okx/plonky2.git", rev="0f8647c0145b4f2711baae5ad40dc931c41f919c"}
