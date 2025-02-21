@@ -1,4 +1,4 @@
-> :warning: This code currently works only on **x86-64 (amd64) Linux** and **arm64 macOS** (Apple Sillicon).
+> :warning: This code currently works only on **x86-64 (amd64) Linux**, **aarch64 (arm64) Linux**, and **arm64 macOS** (Apple Sillicon).
 
 ## Build the Rust library
 

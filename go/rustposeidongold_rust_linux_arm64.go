@@ -1,10 +1,10 @@
-//go:build linux && aarch64
+//go:build linux && arm64
 
 package poseidongold
 
 /*
 #cgo CFLAGS: -I.
-#cgo LDFLAGS: -L. -lrustposeidongold-linux-aarch64
+#cgo LDFLAGS: -L. -lrustposeidongold-linux-arm64
 #include "lib.h"
 */
 import "C"
